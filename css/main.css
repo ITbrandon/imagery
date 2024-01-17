@@ -1,0 +1,76 @@
+:root {
+  --BGCOLOR: #fbdd64;
+  --FONT-COLOR: hsla(200,0%,0%,.7);
+  --LINK-COLOR: hsla(200,0%,0%,.7);
+  --HEADER-COLOR: #7c5629;
+  --HEADER-FONT-COLOR: #ffe992;
+  --BOX-SHADOW: 0 0 10px black;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --BGCOLOR: #1a1a1a;
+    --FONT-COLOR: WHITESMOKE;
+    --LINK-COLOR: WHITESMOKE;
+    --HEADER-COLOR: WHITESMOKE;
+    --HEADER-FONT-COLOR: GREY;
+    --BOX-SHADOW: 0 0 10px WHITESMOKE;
+  }
+
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: var(--BGCOLOR);
+  color: var(--FONT-COLOR);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', Palatino Linotype, Book Antiqua, Palatino, serif;
+  max-width: 85ch;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 35px;
+  background-color: var(--HEADER-COLOR);
+  color: var(--HEADER-FONT-COLOR);
+  padding: 10px;
+}
+
+.guide {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main {
+  max-width: 85ch;
+  margin: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: var(--BOX-SHADOW)
+}
+
+.cooking {
+  float: left;
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 20%;
+}
+
+.fruits {
+  float: right;
+  border-radius: 50%;
+  margin-left: 1rem;
+  width: 20%;
+}
+
+a {
+  color: var(--LINK-COLOR);
+  font-weight: bolder;
+}
